@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Chess Master</title>
+    <link rel="stylesheet" href="./contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="nav-container">
+        <h2>Chess Master</h2>
+        <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+        <nav>
+          <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero contact-hero">
+      <h1>Contact Us</h1>
+      <p>
+        We’d love to hear from you — reach out for tournament details,
+        registration, or any inquiries.
+      </p>
+    </section>
+
+    <!-- CONTACT CONTENT -->
+    <section class="contact-section">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</p>
+          <p><i class="fas fa-envelope"></i>gameplaywithsana.site</p>
+          <p><i class="fas fa-phone"></i>03xxxxxxxx7</p>
+        </div>
+
+        <div class="contact-form">
+          <form>
+            <label>Name</label>
+            <input type="text" placeholder="Your Name" required />
+
+            <label>Email</label>
+            <input type="email" placeholder="Your Email" required />
+
+            <label>Message</label>
+            <textarea placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 Chess Master | All Rights Reserved</p>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Chess Master</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Fonts & Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="nav-container">
+        <h2>Chess Master</h2>
+        <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+        <nav>
+          <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero about-hero">
+      <h1>About Chess Master</h1>
+      <p>Pakistan’s First Platform for Flying Chess Tournaments</p>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="about">
+      <img src="./images/FlyingChess.jpg" alt="Chess" />
+      <div>
+        <h2>Our Story</h2>
+        <p>
+          Chess Arena is Pakistan’s first-ever dedicated platform for Flying
+          Chess competitions — built to discover, celebrate, and unite strategic
+          thinkers from every corner of the country. Our mission is to create a
+          free, welcoming, and community-driven space where players of all ages
+          can compete, showcase their skills, and grow through fun, healthy
+          competition.
+        </p>
+      </div>
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section class="about mission-vision">
+      <div>
+        <h2>Our Mission</h2>
+        <p>
+          Whether you’re a lifelong board game lover or just enjoy a good mental
+          challenge, Chess Master is for you. No registration fees, no
+          complicated rules — just exciting, fair, and action-packed tournaments
+          open to everyone.
+        </p>
+      </div>
+      <div>
+        <h2>Our Vision</h2>
+        <p>
+          To be the leading provider of eco-friendly, inclusive, and engaging
+          board game events in Pakistan, inspiring communities to embrace fair
+          play, develop strategic thinking, and connect with others through
+          shared passion for games.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHAT IS FLYING CHESS -->
+    <section class="offerings">
+      <h2>What is Flying Chess?</h2>
+      <p>
+        Flying Chess (also known as Aeroplane Chess) is a classic multiplayer
+        board game that combines logic and strategy. Played by 2 to 4 players
+        using dice and tokens, the goal is to race your pieces from the base to
+        the finish line while blocking or overtaking opponents. We’ve elevated
+        this traditional game into a competitive, skill-based tournament format.
+      </p>
+    </section>
+
+    <!-- WHY WE STARTED -->
+    <section class="offerings">
+      <h2>Why We Started Chess Master</h2>
+      <p>
+        Pakistan is full of talented individuals who enjoy classic games but
+        lack structured platforms to compete. Chess Master was created to change
+        that — providing a space where everyone can participate without
+        financial barriers, and where strategy and skill are celebrated.
+      </p>
+    </section>
+
+    <!-- VALUES -->
+    <section class="features">
+      <div class="feature-card">
+        <h3>Fair Play</h3>
+        <p>Every tournament is run with transparency and clear rules.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Inclusivity</h3>
+        <p>We welcome players of all ages, backgrounds, and skill levels.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Growth</h3>
+        <p>We help unlock your potential and sharpen your skills.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Community</h3>
+        <p>We value relationships more than just winning.</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 Chess Master | All Rights Reserved</p>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

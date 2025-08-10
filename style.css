@@ -1,0 +1,423 @@
+:root {
+    --bg-dark: #121212;
+    --bg-card: #1e1e1e;
+    --gold: #d4af37;
+    --text-light: #f5f5f5;
+    --text-muted: #cccccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+    background-color: var(--bg-dark);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container h2 {
+    color: var(--gold);
+    font-family: "Playfair Display", serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-light);
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--gold);
+}
+
+/* HERO */
+.hero {
+    background: url(./images/flying-chess-tornament.webp) center / cover no-repeat;
+    text-align: center;
+    padding: 12rem 1rem;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    color: var(--gold);
+}
+
+.hero p {
+    margin-top: 1rem;
+    font-family: "Noto Nastaliq Urdu", serif;
+    font-size: 1.4rem;
+    color: var(--text-light);
+}
+
+/* IMAGE URDU CENTER FIX */
+.imgurdu {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: -50px auto 0 auto;
+}
+
+/* DOWNLOAD BUTTONS */
+.download-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+}
+
+.btn {
+    background: var(--gold);
+    color: var(--bg-dark);
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    flex: 1 1 calc(50% - 1rem);
+    text-align: center;
+    min-width: 200px;
+}
+
+.btn:hover {
+    background: #b8962f;
+}
+
+/* ALERT BOX */
+.alert {
+    text-align: center;
+    height: auto;
+    max-width: 100%;
+}
+
+/* FEATURES */
+.features {
+    max-width: 1200px;
+    margin: 3rem auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.feature-card {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.feature-card h3 {
+    color: var(--gold);
+}
+
+/* ABOUT */
+.about {
+    max-width: 1200px;
+    margin: 3rem auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+}
+
+.about img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about h2 {
+    font-family: "Playfair Display", serif;
+    color: var(--gold);
+}
+
+.about ul {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+.about ul li {
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+}
+
+/* OFFERINGS */
+.offerings {
+    max-width: 1200px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.offerings h2 {
+    color: var(--gold);
+}
+
+.offer-grid {
+    margin-top: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.offer-card {
+    background: var(--bg-card);
+    border-radius: 10px;
+    padding: 1.5rem;
+    border: 1px solid #333;
+}
+
+.offer-card h3 {
+    color: var(--gold);
+}
+
+/* WHY JOIN */
+.why-join {
+    background: var(--gold);
+    color: var(--bg-dark);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.why-join h2 {
+    font-family: "Playfair Display", serif;
+}
+
+/* GALLERY */
+.gallery {
+    text-align: center;
+    padding: 50px 20px;
+    background: #121212;
+    color: #fff;
+}
+
+.gallery h2 {
+    color: #b8962f;
+    padding: 20px;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.icon-card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-card i {
+    font-size: 60px;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.icon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+}
+
+.icon-card p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* REVIEWS */
+.reviews {
+    max-width: 1200px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.reviews h2 {
+    color: var(--gold);
+}
+
+.review-cards {
+    margin-top: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.alertmain {
+    text-align: center;
+}
+
+.review-card {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.review-card strong {
+    color: var(--gold);
+}
+
+/* FOOTER */
+footer {
+    background: var(--bg-card);
+    color: var(--text-light);
+    padding: 2rem 1rem;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+footer a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 10rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 8rem 1rem;
+        height: auto;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+
+/* MOBILE NAV TOGGLE */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: var(--bg-dark);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        border-top: 1px solid #333;
+        animation: slideDown 0.3s ease forwards;
+    }
+
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.about-hero {
+    background: url(./images/flying-chess-tornament.webp) center / cover no-repeat;
+    padding: 8rem 1rem;
+}
+
+.about-hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    color: var(--gold);
+}
+
+.about-hero p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
+.mission-vision {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.mission-vision h2 {
+    color: var(--gold);
+}
