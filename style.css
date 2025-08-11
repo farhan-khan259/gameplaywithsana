@@ -68,15 +68,16 @@ nav a:hover {
 
 /* HERO */
 .hero {
-    background: url(./flying-chess-tornament.webp) center / cover no-repeat;
+    background: url(./dtc.jpeg) center / cover no-repeat;
     text-align: center;
     padding: 12rem 1rem;
 }
 
+
 .hero h1 {
     font-family: "Playfair Display", serif;
     font-size: 2.5rem;
-    color: var(--gold);
+    color: #fff;
 }
 
 .hero p {
